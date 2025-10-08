@@ -1,60 +1,165 @@
-/* Reset some default styles */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Header */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  /* Navigation Bar */
-  nav {
-    background-color: #444;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  nav a:hover {
-    background-color: #555;
-  }
-  
-  /* Main Content */
-  main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgrey;
+  color: blue;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px red;
+  letter-spacing: 5px;
+}
+
+
+h2 {
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  letter-spacing: -2px;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  background-color: blue;
+  color: white;
+  text-align: justify;
+  display: inline-block;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+p.one {
+  margin: 30px;
+  padding: 5px;
+  background: yellow;
+  border: 1px solid black;
+  outline: 3px solid red;
+  outline-offset: 15px;
+  word-spacing: 10px;
+}
+
+p.two {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+  text-transform: capitalize;
+}
+
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+a:link,
+a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: green;
+  color: white;
+}
+
+
+ol {
+  background: salmon;
+  padding: 20px;
+}
+ol li {
+  background: mistyrose;
+  color: darkred;
+  padding: 10px;
+  margin-left: 20px;
+}
+ul {
+  background: powderblue;
+  padding: 20px;
+}
+ul li {
+  background: mistyrose;
+  color: darkblue;
+  margin: 5px;
+}
+
+
+table, th, td {
+  border: 1px solid;
+}
+table {
+  width: 100%;
+}
+th {
+  height: 70px;
+}
+td {
+  text-align: center;
+}
+tr:hover {
+  background-color: coral;
+}
+div.tablecontainer {
+  overflow-x: auto;
+}
+
+
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  float: right;
+}
+div.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
